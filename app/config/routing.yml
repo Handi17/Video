@@ -1,0 +1,6 @@
+uek_video:
+    resource: "@UekVideoBundle/Resources/config/routing.yml"
+    prefix:    /Video
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
