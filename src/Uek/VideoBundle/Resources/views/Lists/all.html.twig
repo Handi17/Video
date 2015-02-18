@@ -1,0 +1,12 @@
+{% extends "UekVideoBundle::bars.html.twig" %}
+{% block header %}
+	<h1>Video PHPreo	Lista wszystkich dostępnych filmów</h1>
+{% endblock %}
+{% block content %}
+	{% for movie in all %}
+		<div class="col-xs-12 col-md-6">
+			<p>{{ movie.title }}</p> 
+			<img src="{{asset('bundles/uekvideo/images/films/' ~ movie.picture ~ '.jpg')}}" alt="{{ movie.title }}" class="img-thumbnail">
+		</div>
+{% endfor %}
+{% endblock %} 
